@@ -79,7 +79,7 @@ abbyy_POST <- function(path, query, body = "", ...) {
   }
 
   auth <- authenticate(app_id, app_pass)
-  res <- POST("https://cloud.ocrsdk.com/",
+  res <- POST("https://cloud-westus.ocrsdk.com",
          path = path,
          auth,
          query = query,

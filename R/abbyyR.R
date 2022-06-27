@@ -50,7 +50,7 @@ abbyy_GET <- function(path, query, ...) {
   }
 
   auth <- authenticate(app_id, app_pass)
-  res <- GET("https://cloud.ocrsdk.com/", path = path, auth, query = query, ...)
+  res <- GET("https://cloud-westus.ocrsdk.com", path = path, auth, query = query, ...)
   abbyy_check(res)
   res <- xmlToList(content(res, as = "text"))
 
